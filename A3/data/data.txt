@@ -1,0 +1,67 @@
+﻿Note: This data is described in a way that is not intended to suggest what
+your database design should be! It is a simple instance that does not necessarily populate all fields.
+
+
+Dive sites:
+
+1.  Bloody Bay Marine Park is located in Little Cayman, and offers cave diving.  It offers
+masks for $5 and fins for $10. It has a cave dive capacity of 10 people, and a
+diver’s fee of $10. It has been rated 3 stars by Jim.
+
+2. Widow Maker’s Cave at Montego Bay offers open water and cave diving, and offers masks for $3 and fins for
+$5. It has a capacity of 15 people, and cave dive maxima of 10, and charges $20 per diver. 0 stars
+by Dwight, 1 star by Pam, and 2 by Jim.
+
+3. Crystal Bay, located at Crystal Bay offers open water and cave diving, and offers fins for $5 and
+wrist-mounted dive computers for $20. It has a capacity of 10 people,
+and charges $15 per diver. (Andy 4 stars, Pam 5 stars, Micheal 2 stars
+and Oscar 3 stars)
+
+4. Batu Bolong is located at Batu Bolong ofers all dive types, offering masks for $10 and
+wrist-mounted dive computers for $30. It has a capacity of 10 people,
+and charges $15 per diver.
+
+Maria is a monitor with  a limit of 10 divers at a time, and
+specifically 10 for open water, 5 for cave diving, and 5 for deep
+water diving. Maria is affiliated with all dive sites. Maria
+charges $25 for evening cave dives at Bloody Bay Marine Park, at Widow
+Maker’s Cave $10 for morning open water dives, and $20 for morning
+caves dives. At Crystal Bay she charges $15 for open water dives in
+the afternoon, and finally at Batu Bolong she charges a whopping $30
+for cave dives in the morning.
+
+John  is a monitor with  a limit of 15 divers at a time. John is
+affiliated with  Bloody Bay Marine Park and Crystal Bay. John charges
+$15 at Bloody Bay Marine Park for morning cave dives.
+
+Ben  is a monitor with  a limit of 15 divers at a time, and
+specifically 15 for open water, 5 for cave diving, and 5 for deep
+water diving. Ben is currently only affiliated with Widow Maker’s
+Cave, charging $20 for morning cave dives.
+
+Michael  (michael@dm.org) born 1967-03-15 booked Widow Maker’s Cave
+with Maria on 2019-07-20 for an open water dive in the morning
+(leaving a 2 star rating), and again the next morning for a cave dive
+(0 stars).
+
+Michael has added Dwight Schrute (dwight@dm.org), Jim Halpert
+(jim@dm.org), Pam Beesly(pam@dm.org) and Andy (andy@dm.org) to his
+first booking. Dwight and Jim are also booked on the second dive.
+
+Next Michael booked Bloody Bay Marine Park with John (5 stars), on July
+22 2019 for a cave dive in the morning, and is taking Jim with him
+again.
+
+Finally, for his fourth booking Micheal booked an evening dive on the
+same day with Maria at the same site, again for cave diving.
+
+The last 3 bookings were made by Andy Bernard (andy@dm.org) born 10
+October 1973.
+
+Andy booked a dive with Maria on July 22 (leaving 1 star), accompanied
+by Dwight, Jim, Pam, Michael, Phyllis and Oscar.  Finally, Andy booked
+with  Ben on the 23rd (0 stars) and 24th of July 2019 (2 stars). The
+22nd is an afternoon dive in open water, the 23rd and 24th are morning
+cave dives.
+
+Both Andy and Michael have a PADI certification.

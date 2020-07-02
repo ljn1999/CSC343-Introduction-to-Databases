@@ -1,0 +1,75 @@
+
+=== Questions
+
+Q: In Q 2b for dependencies, what is 'redundancy-preserving'?
+A: should be 'redundancy-preventing'' --- NB! corrected 24/3/2020
+
+Q: How is the monitor Maria affiliated with 3 sites yet has bookings with 4?
+A: This was an error in our .txt file. Maria is affiliated with all 4 sites.
+
+Q: Can a monitor accompany more than 1 group at a time?
+A: No.
+
+Q: Can a site have multiple groups diving at the same time?
+A: Yes (assuming they don't exceed the site's capacity) 
+
+Q: Does the Monitors' price list change based on dive site?
+A: Yes, a Monitor's price list depends on (1) the dive site (2) the time of dive (morning, afternoon, night) (3) the type of dive (open water, cave, > 30 m)
+
+Q: Does the capacity of a site include the monitor?
+A: capacity of a site includes the monitor but capacity of a monitor doesn't include the monitor
+
+Q: Query 2 asks us to return the Monitors' emails but no emails are provided in data.txt
+A: The e-mail of each monitor is {their_name}@wetworld.inc
+
+Q: in data.txt, there is only one capacity per site, but we should have at least 3
+A: "Modified" Capacities:
+* Little Cayman offers only cave diving so the capacity is for cave diving. Depending on how you design your schema, you might still need a default capacity and you can use any value > 10 for that
+* [UPDATED] Montego Bay cave capacity is 10 and the default capacity is 15
+* The capacity provided for Crystal Bay (10) is the default capacity. You can make up the cave diving capacity as long as it is smaller.
+* The capacity provided for Batu Bolong (10) is the default capacity. You can make up all the missing capacities.
+ 
+Q: Should I populate my instance using the data from data.txt?
+A: No
+The whole point of data.txt is to provide you with a description of a very simple database instance, so that your queries can be marked by TAs in the time provided for expected output.
+The correct answer is that your database instance should reflect the data described in data.txt.You may submit your own instances to demonstrate your queries due to the inconsistency in instructions.
+
+
+=== Corrections
+
+For completeness, here is the updated data.txt
+
+It has the below corrections/clarifications
+
+* On the handout, it states that there are smaller capacities for night, cave or deeper than 30meter dives. Your schema only needs to account for the smaller maxima for the cave and deeper than 30meter dives i.e. each site can have a maximum of 3 capacities, which all depend on the dive type and not the dive time (default capacity, cave capacity and deeper than 30 meters capacity)
+ 
+* in data.txt, in the statement "Next Michael booked Bloody Bay Marine Park with Ben (5 stars), on July 22 2019 for a cave dive in the morning, and is taking Jim with him again." Ben should be corrected to John
+ 
+* in data.txt, Maria should be affiliated with all 4 sites
+ 
+
+=== Query 3 clarification
+
+This query can be interpreted in multiple ways.
+Consequently, you can outline any reasonable assumptions you had to make as comments in your q3.sql.
+Here is ONE potential interpretation:
+
+* How to calculate capacity?
+capacity is the number of monitors + number of lead divers + number of other divers at a site
+Note that since, those divers can be doing open water diving, cave diving or > 30 m diving, you want to calculate the capacities for these dive types separately.
+ 
+* How to calculate fullness?
+For each dive type, the fullness is the (capacity)/(max capacity specified by the site for this dive type)
+You can use this to find the average fullness for a specific site and consequently whether the site should be in the <= or > category
+Note, that you don't need to account for time slots/dive types where there are no bookings when calculating the average.
+ 
+* How to calculate price?
+Use the booking information. Note that you need to account for the site's flat fee as well as the monitor's extra charges.
+You don't need to account for fees for any extra equipments (e.g. masks, fins, ...).
+Note, If your query accounts for the fees charged for additional equipment, you will not be penalized (assuming the rest of your query is correct, of course).
+Note that the prices in data.txt are per diver (not per dive)
+ 
+* How to find the average price per category? should we find the average for each site then find the average for each category?
+just find the average for each category, without first calculating the average per site
+ 
+This was only a very simplified interpretation of Query 3. You can provide more complex queries and they will be accepted as well
