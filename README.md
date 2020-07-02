@@ -1,6 +1,6 @@
 # CSC343-Introduction-to-Databases
 # Description
-Course assignments of CSC343 (Winter 2020) at the University of Toronto
+Course assignments of CSC343 (Winter 2020) at the University of Toronto.
 
 A1: Explain contraints of a dataset; write relational algebra expressions for complex queries; derive relational algebra expressions for constraints.
 
